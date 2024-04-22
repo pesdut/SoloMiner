@@ -1,6 +1,6 @@
 @Echo off
-title SoloMiner.py
+title Solominer_v2.py
 Pushd "%~dp0"
 :loop
-python SoloMiner.py
+python Solominer_v2.py
 goto loop

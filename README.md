@@ -7,8 +7,8 @@ New Program Source Bitcoin Free Mining with python and high speed best hash rate
 
 first install this package's :
 ```
-pip install cpython
-pip install cython
+pip install requests
+pip install colorthon
 ```
 if use windows can run this code on .bat or .cmd file for loop for ever time to your system ,
 ```
@@ -34,37 +34,7 @@ goto loop
 | LooperLinux | Bash Script .sh `sh looper.sh`| [Download](https://mmdrza.page.link/LooperSH) |
 
 ----
-
-for use complete source code or download follow downloading section
-
-```
-def logg(msg):
-    logging.basicConfig(level=logging.INFO, filename="miner.log", format='%(asctime)s %(message)s')  # include timestamp
-    logging.info(msg)
-
-def get_current_block_height():
-    # Returns the current network best height
-    r = requests.get('https://blockchain.info/latestblock')
-    return int(r.json()['height'])
-
-def newBlockListener():
-    global cHeight
-
-    while True:
-        network_height = get_current_block_height()
-
-        if network_height > cHeight:
-            logg('[*] Network has new height %d ' % network_height)
-            logg('[*] Our local is %d' % cHeight)
-            cHeight = network_height
-            logg('[*] Our new local after update is %d' % cHeight)
-
-        # respect Api
-        time.sleep(40)
-
-    work_on = get_current_block_height()
-
-```
-
+>[!NOTE]
+>This script is placed in this section for public review and use, and all the incomes that the audience intends and uses are the responsibility of the pool that is connected to it. So please refer to the [official website](https://solo.ckpool.org/ 'solo.ckpool.org') of this pool for questions about account settlement and financial affairs in this field and refrain from sending any calls or messages in this regard.  [`ckpool`](https://solo.ckpool.org/ 'solo.ckpool.org')
 
 

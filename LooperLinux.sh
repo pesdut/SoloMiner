@@ -1,4 +1,4 @@
 while :
 do
-  python3 SoloMiner.py
+  python3 Solominer_v2.py
 done  
